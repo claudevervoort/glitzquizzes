@@ -41,14 +41,18 @@ But how is this itegration achieved?
 - [X] A special browser launch to the tool
 - [ ] A REST API that exposes the learning platform's data to the tool
 
+![Super Launch](/lti/assets/ltilaunch_sm.png)
+
 Yes, it all starts with the launch, where the course member clicks on that special link in the course site that opens up the tool. It's a super launch...
 
 ## Question
 
+![Super Launch?](/lti/assets/ltilaunchqm_sm.png)
 Super Launch? This means the launch is enriched with contextual data allowing the user to bootstrap the tool's experience. What is the data usually included in the launch?
 
 - [X] User identity (at least a user identifier)
 - [X] The Course (Context) identifier
+- [ ] The Student personal needs info
 - [X] The role of that user in that Course (Context)
 - [X] The identifier of the resource to be launched
 
@@ -74,22 +78,24 @@ the LTI Core specification?
 - [ ] LTI 2.0
 - [ ] LTI Advantage
 
+![Lucky 1.3](/lti/assets/lucky13_sm.png)
+
 Indeed, sometimes you need to go back to go forward! LTI 2 is deprecated, you can forget you knew about it if you did!
 
 ## Question
 
-Without going into technical details (there is another glitzquiz for that!), the technical foundations of the LTI specifcations are:
+Without going into technical details (there are other glitzquizzes for that!), the technical foundations of the LTI specifcations are:
 
 - [ ] OAuth 1,0a
 - [X] OAuth 2 and OpenId
 - [ ] JSON Web Token and LTI specific protocol
-- [ ] SAML
+- [ ] SAML/GraphQL
 
 LTI is a profile of OAuth 2 and OpenId. In particular, it extends the OpenId ID Token claim sets to contain the LTI context data mentionned earlier.
 
 ## Question
 
-So LTI Advantage is not a version, it's a bundle of LTI Specifications. What's in that bundle?
+**What's in the bag?** So LTI Advantage is not a version, it's a bundle of LTI Specifications. What's in that bundle?
 
 - [X] LTI 1.3 Core
 - [ ] Course Groups Service
@@ -103,10 +109,10 @@ LTI Advantage bundle definition will probably evolve over time to include additi
 
 When a vendor claims to be LTI Advantage, does it mean it supports some or all the services?
 
-- [X] all the services for a learning platform
-- [ ] some of the services for a learning platform
-- [ ] all the services for a learning tool
-- [X] only the services used for a learning tool
+- [X] all the services if the vendor is a learning platform
+- [ ] some of the services for a learning platform vendor
+- [ ] all the services for a learning tool vendor
+- [X] only the services used for a learning  vendor
 
 An LTI Advantage certified platform guarantees to tools support for a baseline of LTI services. As a tool, the contract is to use only the services that make sense. For example, a tool would not be LTI Advantage if it forces its users to do manual LTI Links creations rather than supporting the picker flow (DeepLinking flow).
 
@@ -122,6 +128,8 @@ Yeah the name may be a bit tricky, Deep Linking is about... importing LTI Links 
 
 ## Question
 
+![Deep Linking Flow](/lti/assets/ltilaunchdl_sm.png)
+
 Deep Linking flow can be used to import in the course:
 
 - [X] LTI Links
@@ -131,5 +139,14 @@ Deep Linking flow can be used to import in the course:
 - [X] Additional types defined by other LTI specifications
 - [X] Additional types defined by the Learning Platform
 
-While deep linking is often centered around the import of LTI Links, it may be used to import other kind of assets. What can be imported is advertised by the tool when launching in the tool: **you can give me back lti links and images only ** for example. A platform can also say if multiple items may be imported at once.
+While deep linking is often centered around the import of LTI Links, it may be used to import other kind of assets. What can be imported is advertised by the tool when launching in the tool: *you can give me back lti links and images only* for example. A platform can also say if multiple items may be imported at once.
 
+## Question
+
+Usually the next important need for a tool after being launched from a learning platform is to be able to return a score. This is the role of the Assignment and Score Services API. AGS allows a tool to:
+
+- [ ] post a score to any gradebook column/activity
+- [ ] post a score to only the activity that was launched by the student
+- [X] post a score to any activity linked to the tool's lti deployment
+
+Right! A key element of LTI Services is to be **sandboxed** to the tool's resources: a tool may access and update its resources in the learning platform, so for example send a score to any of its activities. But it may not post or even see any of the other grade columns or actvitities in the learning platform's course.
