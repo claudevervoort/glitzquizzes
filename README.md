@@ -1,5 +1,7 @@
 # glitzquizzes
 
+Glitzquizzes are simple markdown... Look at the actual glitzquizzes below. You should be able to play your own by passing a `url` query parameter pointing to your markdown (example to come).
+
 ## Official Glitzzes
 
 ### The LTI Gltizzes (WIP, more to come...)
