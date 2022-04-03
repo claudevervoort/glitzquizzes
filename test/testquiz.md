@@ -1,27 +1,38 @@
-# Test the Quiz
+# There is no Quiz
 
 ## Question
 
-A simple single choice question
+**A single choice question** Who is character in There Is No Game?
 
-- [X] Right answer
-- [ ] Swear it's the right answer
-- [ ] This is not the right answer
+![Who is it?](/test/assets/thereisnogame_glitch.jpg)
 
-Yes the right answer is the right answr.
+- [X] The Glitch
+- [ ] The Glitz
+- [ ] The Game Ghost
+
+Let there be Glitz no Glitch!
+
+The Glitch is memorable, but wait to meet GG! And let's see if we can show some code in here...
+
+```
+if player is winning:
+    show glitch
+    mess up game
+```
 
 ## Question
 
-![Solar System](/test/assets/solarsystem.jpg)
+**And now Multiple choice** There are other memorable Non Players in that Non Game, which of those are in the (no) game? 
 
-Multiple choice: which are **not** planets of the solar system. 
+- [ ] Ellie
+- [X] Sherlock Holmes
+- [X] GiGi
+- [ ] Pacman
+- [ ] Mario
+- [ ] Nathan Drake
 
-- [ ] Neptune
-- [X] Pluto
-- [ ] Earth
-- [X] Sun
-- [ ] Titan
+Are they are even more! The best is to play it. You don't play video games? No worry:
 
-Are they even more unknown out there?
+![There is no game](/test/assets/thereisnogame_sm.jpg)
 
-![Solar System](/test/assets/solarsystem.jpg)
+[Find it on steam](https://store.steampowered.com/app/1240210/There_Is_No_Game_Wrong_Dimension/)
