@@ -23,9 +23,9 @@ And it's all in the name! LTI defines a standards way for Learning Tool to integ
 
 ## Question
 
-Talking about **seemless** integration, what is the key goal of LTI?
+Talking about **seamless** integration, what is the key goal of LTI?
 
-- [X] To extend an online course by integrating external resources as couorse content or activities
+- [X] To extend an online course with external activities
 - [ ] To allow a tool to integrate with the back-end services from the school/institution
 - [ ] To offer a tool a single-sign on mechanism with the school/institution infrastructure
 - [ ] The CSV batch export of courses, users and members
@@ -35,7 +35,7 @@ Yes, LTI is first and foremost a UI integration on additional resources in a lea
 
 ## Question
 
-But how is this itegration achieved?
+But how is this integration achieved?
 
 - [ ] A batch/CSV API to exchange course, roster and assignment
 - [X] A special browser launch to the tool
@@ -48,6 +48,7 @@ Yes, it all starts with the launch, where the course member clicks on that speci
 ## Question
 
 ![Super Launch?](/lti/assets/ltilaunchqm_sm.png)
+
 Super Launch? This means the launch is enriched with contextual data allowing the user to bootstrap the tool's experience. What is the data usually included in the launch?
 
 - [X] User identity (at least a user identifier)
@@ -63,9 +64,9 @@ The LTI launch contains also other data such as information about the learning p
 Ok it's nice to pass all that data, but it needs to be trusted by the tool to be usable. A key element of the LTI specification is thus to establish the trust between a learning platform and a tool. In LTI 1.3, how is the trust achieved?
 
 - [ ] a key and a secret are shared between both parties
-- [X] each party shares their public keys, no secret is exchanged
+- [X] each party shares their public keys, no secret is exchanged!
 
-Yes, and that is a key differentiator with the previous version of LTI which relied on a shared secret.
+Yes, and that is a key differentiator with the previous version of LTI. No secret is shared, less chance for breaches!
 
 ## Question
 
