@@ -50,6 +50,8 @@ login_init(iss,client_id,lti_deploy_id,login_hint,lti_hint):
 
 ## Question
 
+![Init Login](/lti/assets/launch_init.png)
+
 Someone ring at the door, let's ask who that is! To ask, we need to use some information from the initiation login request. Which one?
 
 - [ ] Login Hint
@@ -71,7 +73,9 @@ login_init(iss,client_id,lti_deploy_id,login_hint,lti_hint):
 
 ## Question
 
-The tool's now redirect the user's browser back to the platform using the authentication request URL. The request needs to contain quite a few parameters including the `client_id`. How is this request secured?
+![Auth Request](/lti/assets/launch_request.png)
+
+Let's ask who is ringing. The tool's now redirect the user's browser back to the platform using the authentication request URL. The request needs to contain quite a few parameters including the `client_id`. How is this request secured?
 
 - [ ] The request is signed
 - [X] The authentication response URL matches one the registered URL for the client_id
@@ -81,6 +85,8 @@ Yes, still no signature in sight! The security is guaranteed by the fact the res
 Learning platforms usually adhere to a strict URL match. No templates, no additional query parameters. It must be a total match with one of the registered URLs.
 
 ## Question
+
+![auth response](/lti/assets/launch_response.png)
 
 The platform is now ready to tell you who's is ringing. For that, the user's browser is one more time redirected, now back to the tool, to the authentication response URL. Which parameter is included in that request?
 
@@ -104,6 +110,8 @@ authenticate(id_token):
 The ID Token is a JSON Web Token which contains identity claims. LTI extends it with its additional claims pertaining to the launch.
 
 ## Question
+
+![Verification](/lti/assets/launch_verified.png)
 
 The id_token is a signed JWT. How we do we verify the signature?
 

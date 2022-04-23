@@ -7,6 +7,7 @@ Glitzquizzes are simple markdown... Look at the actual glitzquizzes below. You s
 ### The LTI Gltizzes (WIP, more to come...)
 
 - **[Do you know your L, T and I](/lti/whatislti.md)** see if you know what LTI is and what are its use cases.
+- **[At the core of LTI, the Launch](/lti/lticore.md)** LTI all starts with the launch, sending the user from the learning platform to the tool. Let's review if you know what happens when a tool is launched.
 
 ### Debug Quiz
 
