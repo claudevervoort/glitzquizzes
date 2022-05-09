@@ -30,6 +30,8 @@ Wiring done! The registration is entered in both the platform's and the tool's d
 
 ## Question
 
+![Init Login](/lti/assets/launch_init.png)
+
 The instructor has added a link to your tool in the course, usually by entering a given Resource URL.
 
 A student enters the course, and clicks on the resource. Which tool URL is the user's browser redirected to?
@@ -50,9 +52,9 @@ login_init(iss,client_id,lti_deploy_id,login_hint,lti_hint):
 
 ## Question
 
-![Init Login](/lti/assets/launch_init.png)
+![Init Login](/lti/assets/ringbw.png)
 
-Someone ring at the door, let's ask who that is! To ask, we need to use some information from the initiation login request. Which one?
+Someone is ringing at the door, let's ask who that is! Wait, we are registered with multiple platforms. So which door whould we open, which registration information to load from the DB? To know which door is knocking, from which LMS comes the request, we need to use some information from the initiation login request. Which one?
 
 - [ ] Login Hint
 - [X] Issuer (iss)
@@ -62,6 +64,7 @@ Someone ring at the door, let's ask who that is! To ask, we need to use some inf
 
 With the issuer and client id is all you need to lookup the registration data and get the calling platform's authentication request. Passing the client_id is however optional, but widely supported. In the rare case it is not, you will have to rely on the login URL.
 
+So now we can ask by sending an authentication request back to the platform.
 
 ```
 #POST
@@ -80,7 +83,7 @@ Let's ask who is ringing. The tool's now redirect the user's browser back to the
 - [ ] The request is signed
 - [X] The authentication response URL matches one the registered URL for the client_id
 
-Yes, still no signature in sight! The security is guaranteed by the fact the response will only be sent to a preregistered URL. If the authentication response URL is not matching a pre-regsistered one, the launch process is interrupted.
+Yes, still no signature in sight! The security is guaranteed by the fact the response will only be sent to a preregistered URL. If the authentication response URL is not matching a pre-registered one, the launch process is interrupted.
 
 Learning platforms usually adhere to a strict URL match. No templates, no additional query parameters. It must be a total match with one of the registered URLs.
 
@@ -88,7 +91,7 @@ Learning platforms usually adhere to a strict URL match. No templates, no additi
 
 ![auth response](/lti/assets/launch_response.png)
 
-The platform is now ready to tell you who's is ringing. For that, the user's browser is one more time redirected, now back to the tool, to the authentication response URL. Which parameter is included in that request?
+The platform is now ready to tell you who's ringing. For that, the user's browser is one more time redirected, now back to the tool, to the authentication response URL provided in the authentication request. Which parameter is included in that request?
 
 - [ ] A JSON Object with the user and LTI Info
 - [X] A JSON WebToken (id_token) with the user and LTI Info
