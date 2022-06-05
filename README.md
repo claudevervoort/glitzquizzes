@@ -1,6 +1,6 @@
 # glitzquizzes
 
-Glitzquizzes are simple markdown... Look at the actual glitzquizzes below. You should be able to play your own by passing a `url` query parameter pointing to your markdown (example to come).
+Glitzquizzes are simple markdown built to play as quizzes using the litle webapp http://glitzquiz.com ... Look at the actual glitzquizzes below. You should be able to play your own by passing a `url` query parameter pointing to your markdown (ewxample to come).
 
 ## Official Glitzzes
 
