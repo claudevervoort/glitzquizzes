@@ -37,7 +37,7 @@ No more Copy/Paste! No more configuration errors! Dynamic Registration enables:
 
 Yep it does it all!
 
-# Question
+## Question
 
 ![Submission Review](/lti/assets/quiz-subreview.png)
 
@@ -49,7 +49,7 @@ Submission Review is a new UI flow (LTI Message) that allows:
 Yes, on click to see the student work. No more awkward navigation,
 
 
-# Question
+## Question
 
 ![Submission Review](/lti/assets/quiz-subreview.png)
 
@@ -60,7 +60,7 @@ Which submission review, you can also update or set the student's grade.
 
 Right, the submission review launch always contains the line item URL needed to post grade back.
 
-# Question
+## Question
 
 ![Proctoring](/lti/assets/quiz-proctor.png)
 
@@ -71,7 +71,7 @@ How would you qualify the current proposal for the LTI Proctoring spec?
 
 In this iteration, the specification focuses on native assessment delivery, and does not cover configuration. Start a proctoring session, take the assessment, close the session.
 
-# Question
+## Question
 
 ![Quiz](/lti/assets/quiz-quiz.png)
 
