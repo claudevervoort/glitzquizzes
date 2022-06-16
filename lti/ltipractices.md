@@ -17,6 +17,8 @@ A tool should rely on email passed by the LMS to identify the user, and even pos
 - [ ] Good practice
 - [X] Bad practice
 
+A tool shgould usually be wary to use the passed in email as a reliable source of identity. The lms user id is the immutable id to rely on.
+
 ## Question
 
 You should avoid storing the user's email or names for an extended period of time.
@@ -33,11 +35,11 @@ A tool should use deep linking picker flow to import LTI Links in a course.
 - [X] Good practice
 - [ ] Bad practice
 
-Let's keep the plumbing hidden. nNo more copy/paste, no more link settings to fill, or over reliance on resource_link_id.
+Let's keep the plumbing hidden! No more copy/paste, no more link settings to fill, or over reliance on resource_link_id.
 
 ## Question
 
-If the link is to a graded activity, you should include a line item in the resource link definition included in the deep linking response.
+In deep linking, if the link to import is to a graded activity, you should include a line item in the resource link definition included in the deep linking response.
 
 - [X] Good practice
 - [ ] Bad practice, you should always create line item (gradebook column) using Assignment and Grade Service
