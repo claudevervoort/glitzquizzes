@@ -1,4 +1,4 @@
-# LTI Good Practice? Bad Practice?
+# LTI Good Practice or Bad Practice
 
 ## Question
 
