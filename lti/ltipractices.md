@@ -17,7 +17,7 @@ A tool should rely on email passed by the LMS to identify the user, and even pos
 - [ ] Good practice
 - [X] Bad practice
 
-A tool shgould usually be wary to use the passed in email as a reliable source of identity. The lms user id is the immutable id to rely on.
+A tool should usually be wary to use the passed in email as a reliable source of identity. The lms user id is the immutable id to rely on.
 
 ## Question
 
@@ -48,7 +48,7 @@ It's usually preferred to include the line item so the LMS will create the link 
 
 ## Question
 
-When launching a resource link as an instructor, the instructor should be provided with the options to:
+When launching a resource link as an instructor, the instructor should be provided with the options to (select all that applies):
 
 - [X] preview the activity
 - [X] edit the activity
@@ -68,12 +68,12 @@ A tool is not limited to the number of submissions, it must just properly aggreg
 
 ## Question
 
-When a student completes the work that requires manual grading, the tool should wait until the instructor has graded the work before to post a score to the learning platform
+When a student completes the work that requires manual grading, the tool should wait until the instructor has graded the work before to post a Score object to the learning platform
 
 - [X] Bad practice
 - [ ] Good practice
 
-When the student completes the work, a tool should send a completed but waiting manual grade status to the learning platform so that the platform may for example display a needs grading icon in their gradebook.
+When the student completes the work, even if there is not a grade yet, a tool should send a completed but waiting manual grade status to the learning platform so that the platform may for example display a needs grading icon in their gradebook.
 
 ## Question
 
